@@ -34,3 +34,20 @@ Alex3236||%c='yellow' %s='bold'//，欢迎回到服务器！||%h='这是鼠标�
 
 综上，这个表达式的最终效果如下：  
 ![RText 效果](https://ftp.bmp.ovh/imgs/2021/02/49b51431621b6f93.png)
+
+
+## 调用
+```python
+text = 'text||%c=red'
+
+# 方法一（不推荐）
+from RTextEXP import rtext_format
+def on_load(server, old):
+    server.say(rtext_format(text))
+
+# 方法二
+def on_load(server, old):
+    global exp
+    exp = server.get_plugin_instance('rtext_exp')
+    server.say(exp.rtext_format(text))
+```
