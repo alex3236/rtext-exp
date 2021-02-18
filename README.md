@@ -32,7 +32,7 @@ Alex3236||%c='yellow' %s='bold'//，欢迎回到服务器！||%h='这是鼠标�
 |一个表达式中不能同时存在多个相同参数。|text\|\|%c=red           |text\|\|%c=red %c=blue   |
 |多个参数使用半角空格分隔。          |text\|\|%s=bold underline|text\|\|%s=bold,underline|
 
-综上，这个表达式的最终效果如下：  
+### 综上，例子的最终效果如下：  
 ![RText 效果](https://ftp.bmp.ovh/imgs/2021/02/49b51431621b6f93.png)
 
 
